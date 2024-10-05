@@ -16,25 +16,30 @@ export default function Home() {
           Welcome to Garage Sale
         </Typography>
         <Typography variant="body1" align="center">
-          This is a simple web application to help you sell your items.
+          This is a simple web application{" "}
+          <span className="text-accent">to help you sell</span> your items.
         </Typography>
         <TextField
+          autoFocus={false}
+          color="primary"
+          className="rounded-lg"
           fullWidth
           id="outlined-basic"
-          label="Search items"
-          variant="outlined"
+          placeholder="Search for items"
           sx={{
             "& .MuiOutlinedInput-root": {
-              borderRadius: "20px",
-              "& fieldset": {
-                borderColor: "grey.400",
-              },
               "&:hover fieldset": {
-                borderColor: "grey.500",
+                borderColor: "rgba(255, 255, 255, 0.9)", // Slightly brighter on hover
               },
               "&.Mui-focused fieldset": {
-                borderColor: "grey.600",
+                borderColor: "#a4f839", // Full white when focused
               },
+            },
+            "& .MuiInputBase-input": {
+              color: "rgba(255, 255, 255, 0.9)", // Off-white color for the text
+            },
+            "& .MuiInputLabel-root": {
+              color: "rgba(255, 255, 255, 0.7)", // Off-white color for the label (if you add one)
             },
           }}
         />
