@@ -1,6 +1,7 @@
 import { Typography, Box, Container } from "@mui/material";
 import SearchForm from "@/components/SearchForm";
 import Link from "next/link";
+import H1 from "@/components/H1";
 
 const popularLocations = [
   {
@@ -24,9 +25,7 @@ export default function Home() {
           mt: 4,
         }}
       >
-        <Typography variant="h4" align="center">
-          Welcome to Garage Sale
-        </Typography>
+        <H1>Welcome to Garage Sale</H1>
         <Typography variant="body1" align="center">
           This is a simple web application{" "}
           <span className="text-accent">to help you sell</span> your items.
