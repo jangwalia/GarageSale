@@ -1,5 +1,7 @@
-import { Typography, Box, TextField, Container } from "@mui/material";
+import { Typography, Box, Container } from "@mui/material";
+import SearchForm from "@/components/SearchForm";
 import Link from "next/link";
+import H1 from "@/components/H1";
 
 const popularLocations = [
   {
@@ -23,39 +25,12 @@ export default function Home() {
           mt: 4,
         }}
       >
-        <Typography variant="h4" align="center">
-          Welcome to Garage Sale
-        </Typography>
+        <H1>Welcome to Garage Sale</H1>
         <Typography variant="body1" align="center">
           This is a simple web application{" "}
           <span className="text-accent">to help you sell</span> your items.
         </Typography>
-        <form className="w-full">
-          <TextField
-            autoFocus={false}
-            color="primary"
-            className="rounded-lg"
-            fullWidth
-            id="outlined-basic"
-            placeholder="Search for items"
-            sx={{
-              "& .MuiOutlinedInput-root": {
-                "&:hover fieldset": {
-                  borderColor: "rgba(255, 255, 255, 0.9)", // Slightly brighter on hover
-                },
-                "&.Mui-focused fieldset": {
-                  borderColor: "#a4f839", // Full white when focused
-                },
-              },
-              "& .MuiInputBase-input": {
-                color: "rgba(255, 255, 255, 0.9)", // Off-white color for the text
-              },
-              "& .MuiInputLabel-root": {
-                color: "rgba(255, 255, 255, 0.7)", // Off-white color for the label (if you add one)
-              },
-            }}
-          />
-        </form>
+        <SearchForm />
         <section className="flex gap-x-4 justify-around w-full">
           <Typography variant="caption">Popular Location</Typography>
           <ul className="flex gap-x-4 text-sm text-white/60">
