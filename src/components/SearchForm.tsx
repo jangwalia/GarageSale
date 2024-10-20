@@ -10,7 +10,7 @@ function SearchForm() {
     event.preventDefault();
 
     if (!searchCity) return;
-    router.push(`/events/${searchCity}`);
+    router.push(`app/events/${searchCity}`);
   }
   return (
     <form onSubmit={handleNameSubmit} className="w-full">

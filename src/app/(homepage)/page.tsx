@@ -6,11 +6,11 @@ import H1 from "@/components/H1";
 const popularLocations = [
   {
     name: "Surrey",
-    url: "/events/surrey",
+    url: "app/events/surrey",
   },
   {
     name: "Delta",
-    url: "/events/delta",
+    url: "app/events/delta",
   },
 ];
 export default function Home() {
