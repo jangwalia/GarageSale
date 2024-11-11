@@ -15,6 +15,20 @@
       "when": 1729458179283,
       "tag": "0001_odd_bloodstorm",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1731259166486,
+      "tag": "0002_blushing_riptide",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1731263373541,
+      "tag": "0003_foamy_boomer",
+      "breakpoints": true
     }
   ]
 }
